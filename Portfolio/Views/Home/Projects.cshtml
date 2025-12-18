@@ -1,5 +1,8 @@
-﻿
-    <main class="main">
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+
+<main class="main">
 
         <!-- Page Title -->
         <div class="page-title" data-aos="fade">
@@ -8,7 +11,7 @@
                     <div class="row d-flex justify-content-center text-center">
                         <div class="col-lg-8">
                             <h1>Projects</h1>
-                            <p class="mb-0"> this is my projects</p>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
                 </div>
@@ -32,39 +35,136 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item  position-relative">
                             <div class="icon">
-                                <i class="bi - bi bi-database"></i>
+                                <i class="bi bi-gear-fill"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                            <h3>Bank Management System</h3>
+                        <a href="https://github.com/Adel627/Club_System_API" target="_blank" class="stretched-link">
+                            <h3>Club System API </h3>
                             </a>
-                        <p>comprehensive software solution designed to streamline and automate banking operations. This project aims to provide a user-friendly interface for managing various banking tasks, including account creation, transactions, and customer management. Key features include account balance tracking, transaction history, and secure login functionality</p>
+                        <div class="project-description">
+                            <div class="description-item">
+                                <strong class="label">Description</strong>
+                                <p class="content">
+                                    Developed a RESTful Web API for managing a sports club system that allows users to register, view, and join services offered by coaches. The system handles memberships, payments, and service management with role-based access control for admins, coaches, and members. Implemented efficient data models, clean architecture, and secure authentication to ensure scalability and maintainability.
+                                </p>
+                            </div>
+
+                            <div class="description-item">
+                                <strong class="label">Technologies</strong>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">ASP.NET Core 9</span>
+                                    <span class="tech-badge">Microsoft SQL Server</span>
+                                    <span class="tech-badge">EFCore</span>
+                                    <span class="tech-badge">JWT</span>
+                                    <span class="tech-badge">Refresh Token</span>
+                                    <span class="tech-badge">Stripe API</span>
+                                    <span class="tech-badge">Mapster</span>
+                                    <span class="tech-badge">Background Job</span>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-code"></i>
+                                <i class="bi bi-shop"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>C# Projects</h3>
+                        <a href="https://github.com/Adel627/eCommerceApp" target="_blank" class="stretched-link">
+                            <h3>ECommerceApp API </h3>
                             </a>
-                        <p>a few practicing projects in C#</p>
+                        <div class="project-description">
+                            <div class="description-item">
+                                <strong class="label">Description</strong>
+                                <p class="content">
+                                    Developed a scalable e-commerce application using a multi-layered architecture that separates Application, Domain, Infrastructure, and Host concerns. Implemented RESTful Web APIs to manage product catalogs, user accounts, and order processing. Applied SOLID principles, clean architecture, and efficient data modeling to ensure maintainability and extensibility. Managed data persistence with SQL Server and provided clear API documentation for testing and integration.
+                                </p>
+                            </div>
+
+                            <div class="description-item">
+                                <strong class="label">Technologies</strong>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">ASP.NET Core 9</span>
+                                    <span class="tech-badge">Microsoft SQL Server</span>
+                                    <span class="tech-badge">EFCore</span>
+                                    <span class="tech-badge">JWT</span>
+                                    <span class="tech-badge">Refresh Token</span>
+                                    <span class="tech-badge">Stripe API</span>
+                                    <span class="tech-badge">Mapster</span>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-passport"></i>
+                                <i class="bi bi-book-fill"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Portfolio</h3>
+                        <a href="https://github.com/Adel627/BookMate" target="_blank" class="stretched-link">
+                            <h3>BookMate MVC </h3>
                             </a>
-                            <p>A website portfolio to practise in Asp.net core mvc</p>
+                        <div class="project-description">
+                            <div class="description-item">
+                                <strong class="label">Description</strong>
+                                <p class="content">
+                                    Developed a complete web application for managing books, authors, and categories using ASP.NET Core MVC. The system allows users to add, edit, and delete books, manage copies, and organize them by categories and authors. Implemented features such as image upload, pagination, and category filtering with a responsive Bootstrap-based interface. Designed the architecture following MVC principles to ensure scalability and maintainability.
+                                </p>
+                            </div>
+
+                            <div class="description-item">
+                                <strong class="label">Technologies</strong>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">ASP.NET Core MVC 9</span>
+                                    <span class="tech-badge">C#</span>
+                                    <span class="tech-badge">Microsoft SQL Server</span>
+                                    <span class="tech-badge">Entity Framework Core</span>
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">jQuery</span>
+                                    <span class="tech-badge">Bootstrap 5</span>
+                                    <span class="tech-badge">Mapster</span>
+                                    <span class="tech-badge">Toastr.js</span>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div><!-- End Service Item -->
 
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <a href="https://github.com/Adel627/Online_learning_platform" target="_blank" class="stretched-link">
+                            <h3>Online Learning Platform MVC </h3>
+                        </a>
+                        <div class="project-description">
+                            <div class="description-item">
+                                <strong class="label">Description</strong>
+                                <p class="content">
+                                    This project is an Online Learning Platform built using ASP.NET Core MVC, designed to manage online courses and student enrollments. The platform provides user authentication, role-based access control, and the ability to manage courses, categories, and enrollments.
+                                </p>
+                            </div>
+
+                            <div class="description-item">
+                                <strong class="label">Technologies</strong>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">C#</span>
+                                    <span class="tech-badge">LINQ</span>
+                                    <span class="tech-badge">Entity Framework Core</span>
+                                    <span class="tech-badge">ASP.NET Core MVC 8</span>
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
                 </div>
 
             </div>
@@ -72,3 +172,55 @@
         </section><!-- /Services Section -->
 
     </main>
+<style>
+    .project-description {
+        margin-top: 1rem;
+    }
+
+    .description-item {
+        margin-bottom: 1.5rem;
+    }
+
+        .description-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .description-item .label {
+            display: block;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: #0d47a1;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .description-item .content {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #666;
+            margin: 0;
+        }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tech-badge {
+        display: inline-block;
+        background-color: #f0f0f0;
+        color: #0d47a1;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid #0d47a1;
+        transition: all 0.3s ease;
+    }
+
+        .tech-badge:hover {
+            background-color: #0d47a1;
+            color: white;
+        }
+</style>

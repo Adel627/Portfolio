@@ -1,4 +1,4 @@
-﻿@model Contactmessage
+﻿@model PersonalinfoViewModel
 
 <main class="main">
 
@@ -35,7 +35,7 @@
                             <i class="icon bi bi-geo-alt flex-shrink-0"></i>
                             <div>
                                 <h3>Address</h3>
-                                <p></p>
+                                <p>@Model.Info.City</p>
                             </div>
                         </div>
                     </div><!-- End Info Item -->
@@ -45,7 +45,7 @@
                             <i class="icon bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Call Me</h3>
-                                <p></p>
+                                <p>@Model.Info.Phonenumber</p>
                             </div>
                         </div>
                     </div><!-- End Info Item -->
@@ -55,7 +55,7 @@
                             <i class="icon bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Me</h3>
-                                <p></p>
+                                <p>@Model.Info.Email</p>
                             </div>
                         </div>
                     </div><!-- End Info Item -->
@@ -66,43 +66,17 @@
                             <div>
                                 <h3>Social Profiles</h3>
                                 <div class="social-links">
-                                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                                    <a href="#"><i class="bi bi-facebook"></i></a>
-                                    <a href="#"><i class="bi bi-instagram"></i></a>
-                                    <a href="#"><i class="bi bi-skype"></i></a>
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                </div>
+                                <a href="@Model.Links[0]" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="@Model.Links[1]" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="@Model.Links[2]" target="_blank"><i class="bi bi-facebook"></i></a>
+                                <a href="@Model.Links[3]" target="_blank"><i class="bi bi-instagram"></i></a>
+
+                            </div>
                             </div>
                         </div>
                     </div><!-- End Info Item -->
 
                 </div>
-
-            <form asp-action="Contacts" method="post" style="max-width: 600px; margin: auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);">
-                <div style="margin-bottom: 15px;">
-                    <input asp-for="Name" class="form-control" placeholder="Your Name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
-                </div>
-
-                <div style="margin-bottom: 15px;">
-                    <input asp-for="Email" class="form-control" placeholder="Your Email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
-                </div>
-
-                <div style="margin-bottom: 15px;">
-                    <input asp-for="Subject" class="form-control" placeholder="Subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
-                </div>
-
-                <div style="margin-bottom: 15px;">
-                    <input asp-for="Message" class="form-control" placeholder="Message" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
-                </div>
-
-                <div style="text-align: center;">
-                    <button type="submit" class="btn btn-primary" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Send</button>
-                </div>
-            </form>
-
-
-
-
             </div>
 
         </section><!-- /Contact Section -->

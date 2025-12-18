@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Portfolio.Models;
 using Portfolio.ViewModels;
 using System.Diagnostics;
+using static System.Net.WebRequestMethods;
 
 namespace Portfolio.Controllers
 {
@@ -17,9 +18,9 @@ namespace Portfolio.Controllers
         {
             Name = "Adel Fayed",
             Title = "Backend .Net Developer",
-            Age = 22,
+            Age = 24,
             Birthdate = "20/12/2001",
-            Aboutme = "I am Adel Fayed, I am student in Computer Engineering and Automatic Control at Tanta University. I am passionate about backend development,  using .NET technologies. With a strong foundation in software engineering principles and building efficient applications, I am eager to apply my skills and knowledge to real-world projects. ",
+            Aboutme = "I am a fresh graduate from the Faculty of Engineering, Tanta University, with a degree in Computer Engineering and Automatic Control and a strong focus on Software Engineering. I specialize in Backend Development, with solid proficiency in ASP.NET Core and C#.",
             City = "Kafr El Zayat - Tanta - Egypt",
             Phonenumber = "+20 1120443095",
             Email = "fayedadel627@gmail.com"
@@ -34,7 +35,13 @@ namespace Portfolio.Controllers
             PersonalinfoViewModel persiViewModel = new PersonalinfoViewModel
             {
 
-                Links = new List<string>() { "https://www.linkedin.com/in/adel-fayed-b976982b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
+                Links = new List<string>() 
+                {
+                    "https://github.com/Adel627 ",
+                    "https://www.linkedin.com/in/adel-fayed-b976982b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ,
+                    "https://www.facebook.com/adel.fayed.779/?locale=ar_AR",
+                    "https://www.instagram.com/adel_gamall_fayed/",
+                }
             };
 
             return View(persiViewModel);
@@ -58,11 +65,17 @@ namespace Portfolio.Controllers
             PersonalinfoViewModel persiViewModel = new PersonalinfoViewModel
             {
                 Info = persi,
-                Links = new List<string>() { "https://www.linkedin.com/in/adel-fayed-b976982b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
+                Links = new List<string>() 
+                {
+                    "https://github.com/Adel627 ",
+                    "https://www.linkedin.com/in/adel-fayed-b976982b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ,
+                    "https://www.facebook.com/adel.fayed.779/?locale=ar_AR",
+                    "https://www.instagram.com/adel_gamall_fayed/",
+                }
             };
-            Contactmessage x = new Contactmessage();
+          
 
-            return View(x);
+            return View(persiViewModel);
         }
 
         [HttpPost]
